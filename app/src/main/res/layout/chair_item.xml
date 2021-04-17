@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+
+    app:cardBackgroundColor="#C4C4C4"
+    app:cardCornerRadius="15dp">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgChair"
+            android:layout_width="224dp"
+            android:layout_height="278dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/images1" />
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="37dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="196dp"
+            android:text="550"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="@+id/imgChair"
+            app:layout_constraintHorizontal_bias="0.64"
+            app:layout_constraintStart_toStartOf="@+id/imgChair"
+            app:layout_constraintTop_toTopOf="@+id/imgChair" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="159dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="16dp"
+            android:text="Matteo Armchair"
+            android:textColor="#000000"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgChair"
+            app:layout_constraintEnd_toEndOf="@+id/imgChair"
+            app:layout_constraintHorizontal_bias="0.553"
+            app:layout_constraintStart_toStartOf="@+id/imgChair" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.918"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/daucong" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

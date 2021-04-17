@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgChair_bag"
+        android:layout_width="147dp"
+        android:layout_height="155dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/images1" />
+
+    <TextView
+        android:id="@+id/tvNamebag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imgChair_bag"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvPrice_bag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/tvNamebag"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tvNamebag"
+        app:layout_constraintTop_toBottomOf="@+id/tvNamebag" />
+
+    <TextView
+        android:id="@+id/tvSobag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:text="1"
+        android:textColor="#000000"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgbtn_minusbag"
+        app:layout_constraintStart_toEndOf="@+id/imgbtn_minusbag"
+        app:layout_constraintTop_toTopOf="@+id/imgbtn_minusbag"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_plusbag"
+        android:layout_width="32dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/tvSobag"
+        app:layout_constraintStart_toEndOf="@+id/tvSobag"
+        app:layout_constraintTop_toTopOf="@+id/tvSobag"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/daucong" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_minusbag"
+        android:layout_width="32dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="120dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/tvPrice_bag"
+        app:layout_constraintStart_toEndOf="@+id/imgChair_bag"
+        app:layout_constraintTop_toTopOf="@+id/tvNamebag"
+        app:layout_constraintVertical_bias="0.574"
+        app:srcCompat="@drawable/daucong" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
